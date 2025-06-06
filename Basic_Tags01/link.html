@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Tag</title>
+</head>
+<body>
+     <h2>LINK Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+          The &lt;link&gt; tag is used to connect external resources like CSS files, icons, or fonts to your HTML document. It goes inside the &lt;head&gt; tag, and it does not have a closing tag (self-closing).
+    <pre>
+       | Attribute | Description                                             |
+       | --------- | ------------------------------------------------------- |
+       | `rel`     | Specifies the relationship (e.g., "stylesheet", "icon") |
+       | `href`    | URL of the linked resource                              |
+       | `type`    | Specifies the MIME type (optional)                      |
+       | `media`   | Defines the media/device (optional)                     |
+    </pre>
+    </p>
+
+    <h3>Syntax of LINK Tag</h3>
+
+    <code>&lt;link rel="relationship" href="URL" /&gt;</code>
+
+    <h3>Example of LINK Tag</h3>
+
+    <pre>
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Linked CSS Example&lt;/title&gt;
+            &lt;link rel="stylesheet" href="style.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hello World&lt;/h1&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    
+    <p>
+       <strong>🔹 Common Uses of &lt;link&gt;</strong><br><br>
+            * Link CSS file :&lt;link rel="stylesheet" href="style.css"&gt;<br>
+            * Set favicon (icon) :&lt;link rel="icon" href="favicon.icon"&gt;<br>
+            * Import Google Fonts :&lt;link href="https://fonts.googleapis.com/css?family=roboto" rel="stylesheet"&gt;<br>
+            * Preload resources :&lt;link rel="preload" href="main.js" as="script"&gt;<br>
+    </p>
+</body>
+</html>

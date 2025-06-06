@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Tag</title>
+</head>
+<body>
+    <h2>SCRIPT Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+          The &lt;script&gt; tag is used to add or link <b>JavaScript</b> to an HTML document. JavaScript is used to make the page interactive (e.g., form validation, animations, dynamic content).
+    <pre>
+      | Location                  |      Purpose                                             |
+      | --------------------      |  -----------------------------------------------------   |
+      | Inside `&lt;head&gt;`     | Loads before page content (may delay rendering).         |
+      | End of `&lt;body&gt;`     | Preferred - script runs after the page loads.            |
+      | With `defer` or `async`   | Used in `&lt;head&gt;` to control loading behavior.      |
+    </pre>
+    </p>
+
+    <h3>Syntax of SCRIPT Tag</h3>
+    <p>Basic Syntax</p>
+    <code> &lt;script&gt;// JavaScript code here&lt;/script>&gt;</code>
+
+    <p>External Syntax</p>
+    <code> &lt;script src="script.js"&gt;&lt;/script&gt; </code>
+
+    <h3>Example of Internal JavaScript</h3>
+
+    <pre>
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;Internal Script Example&lt;/title&gt;
+            &lt;script&gt;
+                 function showMessage() {
+                   alert("Hello from JavaScript!");
+                 }
+            &lt;/script&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;button onclick="showMessage()"&gt;Click Me&lt;/button&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    
+    <h3>Example of External JavaScript</h3>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;External Script Example&lt;/title&gt;
+            &lt;script&gt;src="main.js" &lt;/script&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;button onclick="showMessage()"&gt;Click Me&lt;/button&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+        <b>JavaScriptfile:</b>
+
+        function showMessage() {
+          alert("Hello from external JavaScript file!");
+        }
+    </pre>
+    <p>
+       <strong>🧠 Attributes of &lt;script&gt;</strong><br><br>
+    <pre>
+         Attribute	                     Purpose
+       --------------     ----------------------------------------------------  
+           src	              URL/path of external JavaScript file
+           type	              Usually "text/javascript" (optional in HTML5)
+           async	          Loads script asynchronously
+           defer	          Delays execution until HTML is fully parsed
+    </pre>
+    </p>
+</body>
+</html>

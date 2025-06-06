@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Tag</title>
+</head>
+<body>
+   <h2>STYLE Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+          The &lt;style&gt; tag is used to write internal <b>CSS</b> directly inside an HTML document. It is placed inside the &lt;head&gt; tag and allows you to style elements without using an external CSS file.
+    </p>
+
+    <h3>Syntax of STYLE Tag</h3>
+
+    <code> &lt;style&gt;  /* CSS rules go here */ &lt;/style&gt;</code>
+
+    <h3>Example of STYLE Tag</h3>
+
+    <pre>
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title>Style Tag Example&lt;/title&gt;
+            &lt;style&gt;
+                 body {
+                     background-color: #f0f0f0;
+                     font-family: Arial, sans-serif;
+                }
+
+                h1 {
+                     color: blue;
+                     text-align: center;
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+            &lt;p&gt;This is a paragraph styled using the &lt;style&gt; tag.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+    
+    <p>
+       <strong>🎨 Where and When to Use &lt;style&gt;</strong><br><br>
+            * Inside &lt;head&gt; → recommended.<br>
+            * Avoid using it inside &lt;body&gt;(not best practice). <br>   
+            * For small projects or quick testing.<br>
+            * For email templates (where external CSS may not work).<br>
+            * For page-specific styles that don’t need reuse.
+    </p>
+</body>
+</html>
