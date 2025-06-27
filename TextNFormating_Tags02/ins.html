@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INS Tag</title>
 </head>
 <body>
-    
+    <h2>INS Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+         * The &lt;ins&gt;tag is used to mark inserted or added text in an HTML document.<br>
+         * By default, it is shown with an underline, often used together with &lt;del&gt; to show content updates or revisions.
+    </p>
+
+    <h3>Syntax of INS Tag</h3>
+    <code> 
+        &lt;ins&gt;Inserted text&lt;/ins&gt;
+    </code>
+
+    <h3>Example of INS Tag</h3>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;INS Tag Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;>The meeting has been rescheduled from <del>Monday</del> to <ins>Wednesday</ins>.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+
+<p>
+<strong>✅  &lt;ins&gt; Use Cases</strong>
+<pre>
+| Scenario               | Example Usage                   |
+| ---------------------- | ------------------------------- |
+| Showing updates        | New content or corrections      |
+| Track changes in blogs | Added notes, dates, corrections |
+| Legal documents        | Show added clauses or edits     |
+</pre>
+</p><br>
+
+<p>    
+<strong>🔹 Optional Attributes</strong>
+<pre> 
+| Attribute  | Description                             |
+| ---------- | --------------------------------------- |
+| `cite`     | URL to the source of the inserted text  |
+| `datetime` | Date/time of the change (in ISO format) |
+
+* Example with attributes:
+html:
+&lt;ins datetime="2025-06-05T14:00:00Z"&gt;New policy added&lt;/ins&gt;<br>
+Output:
+<ins datetime="2025-06-05T14:00:00Z">New policy added</ins>
+</pre>
+</p><br>
+
+<p>
+<strong>🔹 Styling With CSS</strong>
+<pre>
+    html:
+        &lt;ins style="color: green; text-decoration: underline;"&gt;New price: ₹799&lt;/ins&gt;
+    Output:
+        <ins style="color: green; text-decoration: underline;">New price: ₹799</ins>
+    </pre>
+</p>
 </body>
 </html>

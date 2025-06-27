@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>I/EM Tag</title>
 </head>
 <body>
+    <h2>I/EM Tag</h2>
+    <p>
+     <strong>Details:<br><br></strong>
+        * Both &lt;i&gt; and &lt;em&gt; make text italic, but they have different meanings:<br><br>
+         🔹 <b>&lt;i&gt;</b> — Italic for visual style only<br>
+            * Used to visually differentiate text.<br>
+            * No special importance or meaning.<br>
+            * Non-semantic (purely decorative).<br>
+            * Common Uses: Foreign words, technical terms, book titles, etc.<br><br>
+        🔹 <b>&lt;em&gt;</b> — Emphasized (important) text<br>
+            * Adds semantic meaning — the text should be read with emphasis.<br>
+            * Screen readers may stress or change tone when reading..<br>
+            * Semantic HTML element.<br>
+     </p>
+
+    <h3>Syntax of I/EM Tag</h3>
+    <code> 
+        <p>He said &lt;i&gt;carpe diem&lt;/i&gt; and walked away.</p>
+        <p>You &lt;em&gt;must&lt;/em&gt; attend the meeting today.</p>
+   </code>
+
+    <h3>Example of I/EM Tag</h3>
+    <pre>
+      &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;i vs em&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;He opened the book titled <i>Invisible Cities</i>.&lt;/p&gt;
+            &lt;p&gt;You <em>really</em> need to see this!&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
     
+    <p>
+    <strong>📋 Visual & Functional Comparison</strong><br><br>
+      <pre>
+| HTML Code                  | What You See        | Meaning to Browser        |
+| ---------------------------| ------------------- | ------------------------- |
+| &lt;i&gt;This is italic&lt;/i&gt;      | <i>This is italic</i>      | Just styled as italic     |
+| &lt;em&gt;This is important&lt;/em&gt; | <em>This is important</em>   | Italic + carries emphasis |
+
+      </pre> 
+
+    <strong>✅ When to Use What?</strong><br><br>
+      <pre>
+| Use &lt;i&gt; when:                         | Use &lt;em&gt; when:                         |
+| ------------------------------------- | -------------------------------------- |
+| Styling foreign words, quotes, labels | You want to **stress** a word          |
+| Decorative or stylistic purposes only | The word is **semantically important** |
+
+     </pre>
+ </p>    
 </body>
 </html>

@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>B/STRONG Tag</title>
 </head>
 <body>
+     <h2>B/STRONG Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+         * Both &lt;b&gt; and &lt;strong&gt; make text bold, but they serve different purposes:<br><br>
+        🔹 <b>&lt;b&gt;</b> — Bold for visual styling only<br>
+            * No special meaning or importance.<br>
+            * Use when you want text to look bold, like keywords or names.<br>
+            * Non-semantic.<br><br>
+        🔹 <b>&lt;strong&gt;</b> — Bold with importance/semantic meaning<br>
+            * Indicates that the text is important or has strong emphasis.<br>
+            * Useful for accessibility (screen readers read it with emphasis).<br>
+            * Semantic HTML element.<br>
+    </p>
+
+    <h3>Syntax of B/STRONG Tag</h3>
+
+    <code>
+        <p>This is a &lt;b&gt;keyword&lt;/b&gt; in the paragraph.</p>
+        <p>&lt;strong&gt;Warning:&lt;/strong&gt; Do not touch the wires.</p>
+    </code>
+
+    <h3>Example of B/STRONG Tag</h3>
+    <pre>
+    <!DOCTYPE html>
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;b vs strong&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Click the <b>Submit</b> button when you're done.&lt;/p&gt;
+            &lt;p&gt;<strong>Note:</strong> Submitting will erase all data.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
     
+<p>
+<strong>📋 Visual Output</strong><br><br>
+<pre>
+| HTML Code                            | What you See          | Meaning to Browser           |
+| ------------------------------------ | --------------------- | ---------------------------- |
+| &lt;b&gt;This is bold&lt;/b&gt;                  | <b>This is bold</b>          | Just visually bold           |
+| &lt;strong&gt;This is important&lt;/strong&gt;   | <strong>This is important</strong>     | Bold and marked as important |
+</pre> 
+
+<strong>✅ When to Use What?</strong><br><br>
+<pre>
+|       Use &lt;b&gt; when:              |       Use &lt;strong&gt; when:             |
+| -------------------------------- | ------------------------------------ |
+| You want bold **styling only**   | The text has **semantic importance** |
+| Highlighting names, labels, etc. | Highlighting warnings, alerts, etc.  |
+</pre>
+</p>    
 </body>
 </html>

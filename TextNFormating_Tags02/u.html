@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>U Tag</title>
 </head>
 <body>
+    <h2>U Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+         * The &lt;u&gt;tag is used to underline text in HTML.<br>
+         * In HTML5, it is typically used to represent text that is non-ordinary — such as a misspelled word, or something that needs attention — not just for decoration.<br>
+    </p>
+
+    <h3>Syntax of U Tag</h3>
+
+    <code> 
+        &lt;u&gt;Underlined text&lt;/u&gt;
+   </code>
+
+    <h3>Example of U Tag</h3>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;U Tag Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;This is a <u>special note</u> in the paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
     
+<p>
+<strong>🔹 When to Use &lt;u&gt;</strong>
+<pre>
+| Use Case                     | Better Alternative (if needed)             |
+| ---------------------------- | ------------------------------------------ |
+| Underlining misspelled words | &lt;u&gt; is acceptable                          |
+| Decorative underline         | Use **CSS**:  text-decoration: underline;  |
+| Emphasis                     | Use &lt;em&gt; or &lt;strong&gt;                       |
+
+
+</pre> 
+
+<strong>📋 Notes</strong>
+<p>
+  * &lt;u&gt; is non-semantic: it doesn’t tell browsers/screen readers why the text is underlined.<br>
+  * Overuse can confuse users (especially since underlined text is often mistaken for a hyperlink).
+</p>
+
+<strong>🔹 Using CSS Instead (Best Practice)</strong><br>
+<code>html:<br>
+    &lt;p style="text-decoration: underline;"&gt;This text is underlined using CSS.&lt;/p&gt;<br><br>
+    Output:
+    <p style="text-decoration: underline;">This text is underlined using CSS.</p>
+</code>
 </body>
 </html>

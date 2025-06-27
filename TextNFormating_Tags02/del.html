@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DEL Tag</title>
 </head>
 <body>
+    <h2>DEL Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+         * The &lt;del&gt;tag is used to mark deleted or removed text in an HTML document. It is often shown with a strikethrough line (like <del>this</del>).<br>
+         * This is useful when showing edits, revisions, or corrections — especially in collaborative documents, blogs, or article edits.
+    </p>
+
+    <h3>Syntax of DEL Tag</h3>
+    <code> 
+        &lt;del&gt;Deleted text&lt;/del&gt;
+    </code>
+
+    <h3>Example of DEL Tag</h3>
+    <pre>
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;DEL Tag Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;>We will meet on <del>Monday</del> <ins>Tuesday</ins>.</small>&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+<p>    
+<strong>🔹 Combine with &lt;ins&gt; (Inserted Text)</strong><br><br>
+ * Use &lt;ins&gt; to show added or updated text along with &lt;del&gt; for clarity.<br><br>
+</p>
+
+<p>
+<strong>❌ &lt;del&gt; Use Cases</strong><br>
+<pre>
+| Scenario            | Use of &lt;del&gt;                   |
+| ------------------- | ------------------------------ |
+| Correcting errors   | Show old info crossed out      |
+| Tracking changes    | In blogs, wikis, or legal text |
+| A/B testing content | Show removed options           |
+</pre>
+</p><br>
+
+<p>
+<strong>🔹 Styling Example</strong>
+<pre>
+    * You can customize the strikethrough look with CSS:
+    html:
+        &lt;del style="color: red;"&gt;Old Price: ₹1000&lt;/del&gt;<br>
+    Output:
+        <del style="color: red;">Old Price: ₹1000</del>
+    </pre>
+</p>
     
 </body>
 </html>
