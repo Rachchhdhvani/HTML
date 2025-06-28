@@ -3,9 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SUB Tag</title>
 </head>
 <body>
+    <h2>SUB Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+         * The &lt;sub&gt;tag is used display subscript text — text that appears slightly below the baseline. It's commonly used in:<br>
+         * Chemical formulas (e.g., H₂O).<br>
+         * Math notation (e.g., a₁, b₂).<br>
+         * Footnotes or indices.<br>
+         * Scientific and technical writing
+    </p>
+
+    <h3>Syntax of SUB Tag</h3>
+    <code> 
+        &lt;sub&gt;Subscript text&lt;/sub&gt;
+    </code>
+
+    <h3>Example of SUB Tag</h3>
+    <pre>
+        * html:
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;SUB Tag Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;The formula for water is H&lt;sub&gt;2&lt;/sub&gt;O.&lt;/p&gt;
+            &lt;p&gt;Let a&lt;sub&gt;1&lt;/sub&gt;, a&lt;sub&gt;2&lt;/sub&gt;, ..., a&lt;sub&gt;n&lt;/sub&gt; be a sequence.&lt;/p>
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+        *📝 Output:
+            The formula for water is H₂O
+            Let a₁, a₂, ..., aₙ be a sequence
+    </pre>
+
     
+
+<p>
+<strong>🧠 Additional Information</strong>
+<p>
+    * &lt;sub&gt; is an inline element (stays within lines of text).<br>
+    * Like &lt;sup&gt;, it is not semantic — it only changes the visual position of text.<br>
+    * Always use opening and closing tags: &lt;sub&gt;2&lt;/sub&gt;, not just &lt;sub&gt;2.
+</p>
+</p><br>
+
+<p>    
+<strong>✅ Use Cases</strong>
+<pre> 
+| Use Case             | Example                       |
+| ---------------------| ----------------------------- |
+| Chemical notation    | CO&lt;sub&gt;2&lt;/sub&gt; → CO₂          |
+| Math sequences       | a&lt;sub&gt;1&lt;/sub&gt; + a&lt;sub&gt;2&lt;/sub&gt; |
+| Scientific data      | 10&lt;sub&gt;log&lt;/sub&gt;x             |
+| Footnotes or indices | Note&lt;sub&gt;1&lt;/sub&gt;              |
+</pre>
+</p><br>
+
+<p>
+<strong>🔹 Styling With CSS</strong>
+<pre>
+    html:
+       &lt;sub style="color:maroon ; font-size: 15px;"H&lt;sub&gt;2&lt;/sub&gt;O/sub&gt;
+    Output:
+        <sub style="color:maroon ; font-size: 15px;">H<sub>2</sub>O</sub>
+    </pre>
+</p>
 </body>
 </html>

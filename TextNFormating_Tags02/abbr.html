@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ABBREVIATION Tag</title>
 </head>
 <body>
+     <h2>ABBREVIATION Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+         * The &lt;abbr&gt;tag is used to define an abbreviation or acronym. When you hover over it, the full meaning (provided with the title attribute) appears as a tooltip.<br>
+    </p>
+
+    <h3>Syntax of ABBREVIATION Tag</h3>
+    <code>
+    &lt;abbr title="Full Meaning"&gt;Abbreviation&lt;/abbr&gt;
+    </code>
+
+    <h3>Example of ABBREVIATION Tag</h3>
+    <pre>
+        * html:
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;SUB Tag Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;My sister is pursuing her <abbr title="Master of BusinessAdministration">MBA</abbr> &lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+        *📝 Output:
+             My sister is pursuing her <abbr title="Master of Business Administration">MBA</abbr>
+             
+            * 🖱️When you hover over MBA, the browser shows a tooltip: “Master of Business Administration”.
+    </p>
+    </pre>
+
     
+<p>    
+<strong>✅Use Cases</strong>
+<pre> 
+| Use Case              | Example                                                                 |
+| -------------------   | ------------------------------------------------------------------------|
+| Academic degrees      | &lt;abbr title="Bachelor of Science">B.Sc.&lt;/abbr&gt;                          |
+| Technical terms       | &lt;abbr title="HyperText Markup Language">HTML&lt;/abbr&gt;                     |
+| Company/project names | &lt;abbr title="National Aeronautics and Space Administration">NASA&lt;/abbr&gt; |
+</pre>
+</p><br>
+
+<p>
+<strong>📌 Accessibility Tip</strong>
+<p>
+ <b>The &lt;abbr&gt; tag improves accessibility:</b><br>
+  * Screen readers can read the full form if the title is included — helping users better understand short forms.  
+</p>
+</p>
 </body>
 </html>

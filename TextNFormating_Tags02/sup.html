@@ -3,9 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SUP Tag</title>
 </head>
 <body>
+    <h2>SUP Tag</h2>
+    <p>
+        <strong>Details:<br><br></strong>
+         * The &lt;sup&gt;tag is used display superscript text — that is, text raised slightly above the normal line.It’s commonly used for.<br>
+         * Mathematical expressions (like exponents: x²).<br>
+         * Footnotes (e.g., Note¹).<br>
+         * Chemical formulas (e.g., H₂O → H<sub>2</sub>O, CO<sup>2</sup>).
+    </p>
+
+    <h3>Syntax of SUP Tag</h3>
+    <code> 
+        &lt;sup&gt;Superscript text&lt;/sup&gt;
+    </code>
+
+    <h3>Example of SUP Tag</h3>
+    <pre>
+        * html:
+    &lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;SUP Tag Example&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;This is x&lt;sup&gt;2&lt;/sup&gt; + y&lt;sup&gt;2&lt;/sup&gt; = z&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+            &lt;p&gt;Water boils at 100&lt;sup>o&lt;/sup>C.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+
+        *📝 Output:
+
+            This is x² + y² = z²
+            Water boils at 100°C
+    </pre>
     
+
+<p>
+<strong>🧠 Additional Information</strong>
+<p>
+    * Semantically neutral: &lt;sup&gt; is a visual tag, not a semantic one (screen readers read it normally).<br>
+    * Pair tag: Always has both opening &lt;sup&gt; and closing &lt;/sup&gt;.<br>
+    * No line breaks: As an inline element, it stays within text lines.
+</p>
+</p><br>
+
+<p>    
+<strong> 👎 Avoid These Mistakes</strong>
+<pre> 
+| Mistake                        | Better Approach                         |
+| ------------------------------ | --------------------------------------- |
+| Using &lt;sup&gt; for styling only   | Use CSS if you're just adjusting layout |
+| Overusing for emphasis         | Use &lt;strong&gt; or &lt;em&gt; for that           |
+| Leaving it unclosed            | Always close: &lt;sup&gt;2&lt;/sup&gt;              |
+
+</pre>
+</p><br>
+
+<p>
+<strong>🔹 Styling With CSS</strong>
+<pre>
+    html:
+       &lt;sup style="color: red; font-size: 15px;"&gt;E = mc&lt;sup&gt;2&lt;/sup&gt;&lt;/sup&gt;
+    Output:
+        <sup style="color: red; font-size: 15px;">E = mc<sup>2</sup></sup>
+    </pre>
+</p>
 </body>
 </html>
